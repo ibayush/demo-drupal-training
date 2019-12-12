@@ -1,0 +1,33 @@
+<?php
+use Drupal\node\Entity\Node; use Drupal\user\Entity\User;
+
+/**  * Implements hook_ENTITY_TYPE_update().
+* If a user has a Role named 'moderated',
+* append the words 'MODERATED USER' to titles of
+* all the nodes authored by the user
+*/
+
+function update_title_update(\Drupal\Core\Entity\EntityInterface $entity)
+{
+    $user = User::load($entity->id());
+    print_r($user); die();
+    $role = $user->hasRole('moderated');
+    if($role)
+    {
+      $query = \Drupal::entityQuery('node')->condition('uid', $user->id());
+      $nids = $query->execute();
+      $nodes = Node::loadMultiple($nids);
+      foreach($nodes as $node)
+      {
+         $old_title = $node->title->value;
+         if(strpos($old_title,'(MODERATED USER)') == FALSE)
+         {
+            $node->set("title", $old_title . " (MODERATED USER)");
+            $node->save();
+
+         }
+      }
+
+      drupal_set_message('All nodes of the user updated');
+    }
+}

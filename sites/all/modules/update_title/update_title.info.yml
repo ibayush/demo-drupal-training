@@ -1,0 +1,5 @@
+name: Update node Title
+type: module
+description: Update node title.
+core: 8.x
+package: DrupalEasy
