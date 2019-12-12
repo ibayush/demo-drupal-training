@@ -1,0 +1,6 @@
+services:
+ hello_world.say_hello:
+   class: Drupal\hello_world\HelloServices
+
+ 
+
