@@ -1,0 +1,8 @@
+name: Simple Block
+description: A simple block module using DI.
+core: 8.x
+package: Custom
+dependencies:
+- node
+- block
+type: module

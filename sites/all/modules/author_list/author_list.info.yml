@@ -1,0 +1,8 @@
+name: Author List
+description: List of all node Author.
+core: 8.x
+package: Custom
+dependencies:
+- node
+- block
+type: module

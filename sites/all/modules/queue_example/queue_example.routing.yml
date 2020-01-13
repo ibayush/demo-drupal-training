@@ -1,0 +1,7 @@
+queue_example.form_queue:
+  path: '/queue-example/delete'
+  defaults:
+    _form: '\Drupal\queue_example\Form\FormQueue'
+    _title: 'Queue Example'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,15 @@
+author_list.author_view:
+  path: '/author_view'
+  defaults:
+    _controller: '\Drupal\author_list\Controller\AuthorListController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+author_list.author_node:
+  path: '/author_view/node_view/{cid}'
+  defaults:
+    _controller: '\Drupal\author_list\Controller\AuthorListController::node_view'
+    _title: 'View all node'
+  requirements:
+    _permission: 'access content'

@@ -88,6 +88,8 @@
  * );
  * @endcode
  */
+
+ # $settings['install_profile'] = '';
 $databases = [];
 
 /**
@@ -769,7 +771,7 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'demo-drupal',
+  'database' => 'acquia_training',
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',

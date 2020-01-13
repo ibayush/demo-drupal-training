@@ -1,0 +1,10 @@
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - queue_example
+title: 'Queue Worker'
+id: queue_example_worker
+module: queue_example
+callback: queue_example_queue_cronjob
