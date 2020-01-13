@@ -1,0 +1,5 @@
+name: Example
+type: module
+description: Demo of schema yml file.
+core: 8.x
+package: DrupalEasy

@@ -1,0 +1,10 @@
+simple_block.settings:
+  path: '/admin/config/config_form'
+  defaults:
+    _form: '\Drupal\simple_block\Form\ConfigSettingsForm'
+    _title: 'Configuration settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+
+

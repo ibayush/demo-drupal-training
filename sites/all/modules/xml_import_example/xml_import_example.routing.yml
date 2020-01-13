@@ -1,0 +1,12 @@
+# Get contents from the xml source
+xml_import_example.get_contents_from_xml:
+  path: '/get-contents-from-xml'
+  defaults: { _controller: '\Drupal\xml_import_example\Controller\ImportContentFromXML::getContentsFromXMLPage' }
+  requirements:
+    _permission: 'import content from xml'
+# Process all queue items with batch
+xml_import_example.process_all_queue_items_with_batch:
+  path: '/process-all-queue-items'
+  defaults: { _controller: '\Drupal\xml_import_example\Controller\ImportContentFromXML::processAllQueueItemsWithBatch' }
+  requirements:
+    _permission: 'import content from xml'

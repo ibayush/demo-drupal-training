@@ -1,0 +1,5 @@
+type: module
+name: XML import example
+package: Examples
+description: "This module helps understanding the Batch API and Queue API with an XML import example"
+core: 8.x

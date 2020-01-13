@@ -18,7 +18,6 @@ class HelloWorldServiceProvider extends ServiceProviderBase {
    * {@inheritdoc}
    */
   public function alter(ContainerBuilder $container) {
-    
      $definition = $container->getDefinition('hello_world.say_hello');
      $definition->setClass('Drupal\hello_world\HelloServices2');
   }

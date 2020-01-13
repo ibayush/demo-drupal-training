@@ -1,0 +1,4 @@
+import content from xml:
+  title: 'Import content from xml'
+  description: 'With this permission user can import contents from a XML source'
+  restrict access: TRUE
